@@ -1,0 +1,45 @@
+{
+  "name": "@financialcpp/charts",
+  "version": "0.0.1",
+  "description": "Stock market chart component",
+  "repository": "https://github.com/financialcpp/charts.git",
+  "author": "William Hoyle",
+  "license": "MIT",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/charts.umd.js",
+  "module": "./dist/charts.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/charts.es.js",
+      "require": "./dist/charts.umd.js"
+    }
+  },
+  "unpkg": "./dist/charts.umd.js",
+  "jsdelivr": "./dist/charts.umd.js",
+  "scripts": {
+    "dev": "vitepress dev docs",
+    "build": "vitepress build docs",
+    "serve": "vitepress serve docs",
+    "build:library": "vite build",
+    "analyze": "vite build --config analyze.config.js",
+    "publish:library": "npm publish --access public",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore --fix src",
+    "format": "prettier .  --write"
+  },
+  "peerDependencies": {
+    "vue": "^3.1.5"
+  },
+  "dependencies": {
+    "@vitejs/plugin-vue": "^4.0.0",
+    "@vue/compiler-sfc": "^3.2.45",
+    "eslint": "^8.31.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-vue": "^9.9.0",
+    "prettier": "^2.8.3",
+    "rollup-plugin-visualizer": "^5.9.0",
+    "vite": "^4.0.4",
+    "vitepress": "^1.0.0-alpha.36"
+  }
+}
