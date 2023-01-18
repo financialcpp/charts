@@ -9,5 +9,12 @@ npm install @financialcpp/charts
 import the chart:
 
 ```vue
-import { Chart } from '@ulissesferreira/moon'
+import { Chart } from '@financialcpp/charts'
+```
+
+## Dev
+
+```bash
+npm install --include=dev
+npm run dev
 ```
